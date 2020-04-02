@@ -1,4 +1,4 @@
-# Web-Scrapping
+# Web-Scraping
 Web scraping in Python with Flask, BeautifulSoup and Urlib and other libraries
 
 # Libraries
