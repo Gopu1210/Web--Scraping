@@ -13,7 +13,7 @@ necessary libraries that is compatible with this version.
 
 # the main code to run is webscraper.py
 ```
-some chnages has to be done
+some changes has to be done
 soon i will update the fully fuctional code
 ```
 
