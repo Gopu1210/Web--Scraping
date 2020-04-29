@@ -13,8 +13,14 @@ necessary libraries that is compatible with this version.
 
 # the main code to run is webscraper.py
 ```
-some changes has to be done
-soon i will update the fully fuctional code
+After the changes i have uploaded the full code 
 ```
 
 #this code scrape the data from the cars website and also counts the frequency of the words
+# this code uses 
++SQLAlchemy
++re
++Flask
++urlib
++wtforms
++make_response
