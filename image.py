@@ -1,3 +1,6 @@
+#This code is optional for reference on how to extract images using BeautifulSoup
+
+
 import HTMLParser
 from urllib.request import urlopen
 import sys
