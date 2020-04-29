@@ -18,9 +18,9 @@ After the changes i have uploaded the full code
 
 #this code scrape the data from the cars website and also counts the frequency of the words
 # this code uses 
-+SQLAlchemy
-+re
-+Flask
-+urlib
-+wtforms
-+make_response
++ SQLAlchemy
++ re
++ Flask
++ urlib
++ wtforms
++ make_response
