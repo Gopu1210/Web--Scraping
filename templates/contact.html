@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        CONTACT
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text],input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit],input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit],input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Contact Section</h2>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="C:\Webscraper\templates\car.jpg" style="width:100%">
+    </div>
+    <div class="column">
+
+      <form method='POST' action="http://127.0.0.1:5000/result" >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." value={{request.form.firstname}}>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."value={{request.form.lastname}}>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="india" selected>India</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="category">Select category of your query</label>
+        <select id="category" name="category">
+          <option value="consultation">consultation</option>
+          <option value="book">Want to Book</option>
+          <option value="Gifts" >Gifts</option>
+          <option value="cn_mist">Content mistake</option>
+          <option value="web_issue">Website issue</option>
+          <option value="hiring">Hiring</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <label for='contact'>Phone no.</label>
+        <input type='number' maxlength="10" name='contact' placeholder="Your phone number" value={{request.form.contact}}>
+        <input type="submit" name='submit'value="Submit">
+        <input type='reset' value='reset'>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

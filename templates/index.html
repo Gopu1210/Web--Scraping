@@ -37,28 +37,87 @@ th, td {
         <th>Car</th>
         <th>price</th>
         <th>Launch Date</th>
-        <th>images </th>
-        <th>overview </th>
-        
-
-      </tr>
+         </tr>
     </thead>
-    <tbody>
+   
 
    {% for car_info in data %}
    <tr>
      <td> {{ car_info['name'] }} </td>
      <td> {{ car_info['price'] }} </td>
      <td> {{ car_info['year'] }} </td>
-     <td>{{ car_info['image'] }}</td>
-     <td>{{ car_info['ov'] }}</td>
-     
-     
-   </tr>
-   {% endfor %}
+    {% endfor %}
+  </tr>
 
-    </tbody>
+    <table id="customers" >
+      <th>images</th>
+      <th>Overview</th>
+      <tr><td><img src="{{car[0]}}"></td>
+      <td>
+        The South Korean automaker, Kia is gearing up for its India debut by 2020. 
+        It gave a glimpse of the expected line-up at the 14th edition of the
+         Delhi Auto Expo which also included the Kia Rio hatchback 
+         which could be launched in India sometime next year or in 2020.
+          Interestingly, the Kia Rio will be based on the Hyundai-Kia GB 
+          platform which also underpins its Korean cousin, Hyundai i20. 
+        </td></tr>
+      <tr><td><img src="{{car[1]}}"></td>
+      <td>
+        The muscular Mahindra Thar 2020 is ready to become bold and massive. The next-gen Mahindra Thar already got spotted being tested for the first time in India. The looks suggest that the car seems longer as well as wider than the prior model.
+
+The Mahindra Thar Facelift will be based on the latest ladder-frame chassis which is developed in coordination by Ssangyong and Mahindra. It will still ret...
+        </td></tr>
+      <tr><td><img src="{{car[2]}}"></td>
+      <td>
+        Mahindra has been testing the facelift of the Bolero with some cosmetic updates and BS-6 engine configurations. The Bolero has been a successful product from the house of Mahindra with good sales in its many configurations like a truck, pick-up, camper etc. It has been popular in the commercial segment. The 2020 Mahindra Bolero will get a revised vertical grille with circular headlamps. We also e...
+        </td></tr>
+      <tr><td><img src="{{car[3]}}"></td>
+      <td>
+        Mahindra has started working on its upcoming SUV version namely Mahindra TUV300 Facelift.  The facelift will basically come with updated bumpers which can be slightly redesigned. The halogen headlamps can be upgraded for  a projector setup with Daytime-Running Lamps. The design will be an evolution than a revolution. The interior may also see an upgrade with a new touchscreen infotainment system....
+        </td></tr>
+      <tr><td><img src="{{car[4]}}"></td>
+      <td>
+        With the growing demand of compact sedans under 4-metres in India, every manufacturers is launching their own product in the segment. The Japanese auto giant, Toyota holds high reputation in India and have cars in almost all segment. But their Etios sedan couldn't catch the fancy of the customers among the local buyers. Toyota now plans to launch the Vios compact sedan that caters the crowd throu...
+        </td></tr>
+      <tr><td><img src="{{car[5]}}"></td>
+      <td>
+        Hyundai has always given splendid models to the car enthusiasts. The company is now all set to release its latest hatchback namely Hyundai Xcent Facelift. While its name is a facelift, it is much more than just a facelift. Instead, it is an updated Hyundai variant. The car has got new features both inside and outside in the form of new front bumpers, reshaped headlamps, latest fog lamp housings,...
+        </td></tr>
+      <tr><td><img src="{{car[6]}}"></td>
+      <td>
+        After the success of the Hector, MG may release their second vehicle in India. The Baojun 510 is a compact SUV which may compete with Ford Ecosport, Tata Nexon. It will take a lot of styling cues from the Hector, with the DRL and the indicator being placed above the headlamps. The headlamps will also feature LED in some variants. The side profile will consist of body-coloured door handles and ORV...
+        </td></tr>
+      <tr><td><img src="{{car[7]}}"></td>
+      <td>
+        Exhibited at the 2014 Geneva Motor Show, Volkswagen T-Roc concept underpins MQBB platform. This platform is used in some of the other cars from the German carmaker’s clan and its luxury wing Audi. Volkswagen T-Roc is a two-door SUV which features a removable roof. Power is expected to come from a 2.0 litre, TDI diesel motor which is capable of pumping out robust power output. A seven speed dual-c...
+        </td></tr>
+
+        <tr><td><img src="{{car[8]}}"></td>
+        <td>
+          The 2019 Tata Altroz EV along with its conventional spec was unveiled in the recent Geneva Motor Show. This has astonished the potential consumers. The millennial world is now gradually heading towards clean commutation modes making buyers confused between buying a ICE powered car or an electric one. Although both versions of the upcoming Tata Altroz appear to be ready for production, the Altroz...
+          </td>
+        </tr>
+        <tr><td><img src="{{car[9]}}"></td>
+        <td>
+          Tata is expected to launch a seven-seat SUV codenamed Q502 in India. While the H5 model, now christened Harrier, was showcased at the Auto Expo 2018, the company is yet to preview the Q502 publicly. Akin to the Harrier, the upcoming Tata Q502 is also expected to be based on the L550 platform, which underpins Land Rover Discovery. The seven-seat model is expected to be armed by a 2.0-litre Multije...
+          </td></tr>
+
+
+    </table>
+   
+    
+     
+     
+     
+    
+     
+     
+   
+
+    
   </table>
+  
+
   <br>
   <br>
 
@@ -68,5 +127,6 @@ th, td {
 
 
   <p>{{output}}</p>
+  
  </body>
 </html>
